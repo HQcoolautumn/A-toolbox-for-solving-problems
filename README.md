@@ -79,3 +79,5 @@ Note: Due to browser limitations, it is recommended to process videos in clips o
 
 环境配置：部分高级功能（如本地显卡加速）需要用户具备一定的技术基础来配置运行环境。
 (Environment Setup: Advanced features like local GPU acceleration require technical knowledge to set up.)
+<img width="2523" height="1381" alt="demo1" src="https://github.com/user-attachments/assets/3a45af54-27ed-4027-990c-dd6e9829f18f" />
+
