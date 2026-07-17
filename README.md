@@ -1,3 +1,13 @@
+<img width="2520" height="1396" alt="demo1" src="https://github.com/user-attachments/assets/b8c7d9bf-30f4-4f29-9a65-e25ca3ac641e" />
+<img width="2558" height="1398" alt="demo8" src="https://github.com/user-attachments/assets/96098db1-f8eb-48ea-88b0-fec33fe6ec02" />
+<img width="2553" height="1405" alt="demo7" src="https://github.com/user-attachments/assets/cd6bb725-4f96-495e-a7e5-6ad8c7a174ca" />
+<img width="2559" height="1407" alt="demo6" src="https://github.com/user-attachments/assets/5eca5d89-477d-45a5-aebc-c90db630d165" />
+<img width="2559" height="1401" alt="demo5" src="https://github.com/user-attachments/assets/5425408a-ee35-4f6f-961c-72dce6cc9c82" />
+<img width="2550" height="1397" alt="demo4" src="https://github.com/user-attachments/assets/fc78cd99-bcc5-400b-929f-ee346ccc42de" />
+<img width="2557" height="1405" alt="demo3" src="https://github.com/user-attachments/assets/c5f7a59f-b697-4523-bc69-8a4de8648682" />
+<img width="2550" height="1401" alt="demo2" src="https://github.com/user-attachments/assets/b05cc5fe-f36e-4a1b-a4e1-1f513e95815f" />
+<img width="2557" height="1418" alt="demo10" src="https://github.com/user-attachments/assets/73c614a1-4fb0-4842-9462-cbb1a210bc87" />
+<img width="2558" height="1419" alt="demo9" src="https://github.com/user-attachments/assets/559244cc-58a5-4505-bb92-7955bd2b9e8f" />
 解决麻烦的工具盒  / Problem-Solving Toolbox
 
 一个无需安装、点开即用的本地 HTML 网页工具箱
@@ -79,5 +89,3 @@ Note: Due to browser limitations, it is recommended to process videos in clips o
 
 环境配置：部分高级功能（如本地显卡加速）需要用户具备一定的技术基础来配置运行环境。
 (Environment Setup: Advanced features like local GPU acceleration require technical knowledge to set up.)
-<img width="2523" height="1381" alt="demo1" src="https://github.com/user-attachments/assets/3a45af54-27ed-4027-990c-dd6e9829f18f" />
-
