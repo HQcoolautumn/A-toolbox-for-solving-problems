@@ -1,8 +1,11 @@
 解决麻烦的工具盒  / Problem-Solving Toolbox
-
 一个无需安装、点开即用的本地 HTML 网页工具箱
-
 A local HTML toolbox that requires no installation and is ready to use.
+注意：由于最近旧版 ffmpeg 解码器漏洞与ChromeV8引擎越界写入漏洞（2026年6月爆出的严重浏览器漏洞）我更新了防护升级版本，不过由于攻击为极小概率事件，所以保留原始版本，没有更新浏览器的用户可以下载旧版，不过安全风险要需知。我已经尽力更新了网页程序避免被漏洞利用，但是真正有效的防护在于自己，请不要乱下东西
+以下为应对策略：1版本强制:本地桥启动前自动跑 ffmpeg -version低于 7.1.3 直接拒绝启动    2编码器白名单：防护升级版只允许 libx264/libx265/libvpx/... 等已知安全编码器，其余一律拒绝。   3畸形文件拦截 + 体积上限：输入体积硬上限 2GB（转码）/1GB（字幕）
+4下载界面安全须知：在"本地 GPU 工具包"对话框加了醒目红色安全区块，告知用户必须用官方源、保持 ffmpeg ≥7.1.3、勿处理来源不明媒体。
+5浏览器内核自检:启动时检测 Chromium 内核版本，低于 140（覆盖上述在野零日修复基线）即弹出顶部红色安全警告浮层，明确列出在野 CVE 编号，并给"前往升级"按钮。
+6安全响应:HTML头加了X-Content-Type-Options:nosniff以及监控型CSP
 <img width="2520" height="1396" alt="demo1" src="https://github.com/user-attachments/assets/a1b20093-7809-4a17-bc12-4668ade46d0b" />
 核心功能 (Core Features)
 
