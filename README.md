@@ -4,9 +4,9 @@
 
 A local HTML toolbox that requires no installation and is ready to use.
 
-✨ 核心功能 (Core Features)
+核心功能 (Core Features)
 
-🎨 绘画与图像编辑 (Drawing & Image Editing)
+绘画与图像编辑 (Drawing & Image Editing)
 
 笔刷导入：支持导入 PS (Photoshop) 和 SAI 的笔刷文件。
 
