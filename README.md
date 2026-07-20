@@ -80,7 +80,7 @@ Suitable for temporary and lightweight color correction. It is applicable for th
  
  重要提示 (Important Notes)
 
-数据保存：本工具为网页形式，不具备实时自动保存功能。退出网页后数据将会丢失，请在操作过程中（尤其是处理大文件时）务必及时导出并保存！
+数据保存：本工具为网页形式，1.0版本不具备实时自动保存功能。退出网页后数据将会丢失，请在操作过程中（尤其是处理大文件时）务必及时导出并保存！2.0具有该功能。⚠️ 一个使用提醒：直接双击用file://打开时，浏览器安全策略可能不让弹出"选择文件夹"。此时自动保存会落到"浏览器本地缓存"（开始页有恢复下载入口，不会丢）要真正写入你指定的文件夹建议用最新 Chrome/Edge，并通过本工具的本地桥或本地服务器(http://localhost)打开页面，另外自动保存设置仅在开始页配置，点"开始绘画"前请先启用并选好保存地址与格式。
 (Data Saving: This is a web-based tool and does NOT have real-time auto-save. Data will be lost upon closing the tab. Please export your work manually during the process, especially for large files!)
 
 环境配置：部分高级功能（如本地显卡加速）需要用户具备一定的技术基础来配置运行环境。
