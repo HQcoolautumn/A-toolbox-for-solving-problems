@@ -11,8 +11,12 @@ Version 2.0 introduces an auto-save feature, adds the ability to switch between 
 4下载界面安全须知：在"本地 GPU 工具包"对话框加了醒目红色安全区块，告知用户必须用官方源、保持 ffmpeg ≥7.1.3、勿处理来源不明媒体。
 5浏览器内核自检:启动时检测 Chromium 内核版本，低于 140（覆盖上述在野零日修复基线）即弹出顶部红色安全警告浮层，明确列出在野 CVE 编号，并给"前往升级"按钮。
 6安全响应:HTML头加了X-Content-Type-Options:nosniff以及监控型CSP
-<img width="2520" height="1396" alt="demo1" src="https://github.com/user-attachments/assets/a1b20093-7809-4a17-bc12-4668ade46d0b" />
+<img width="2538" height="1401" alt="屏幕截图 2026-10-06 001005" src="https://github.com/user-attachments/assets/4f042b87-49b9-4b6e-b706-5006eed50fad" />
+
 核心功能 (Core Features)
+
+4.0新增播放器功能，支持图片，视频，表格，代码等等大部分格式（包括avif之类的）。
+<img width="2510" height="1392" alt="屏幕截图 2026-10-06 001921" src="https://github.com/user-attachments/assets/56dd4dfc-3fd9-4781-9127-d5547acbedc5" />
 
 1绘画功能 (Drawing)
 <img width="1280" height="708" alt="demo2" src="https://github.com/user-attachments/assets/d4a4534a-ba0e-4687-a816-6c5bd5214b64" />
