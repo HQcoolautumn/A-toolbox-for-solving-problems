@@ -11,6 +11,8 @@ A local HTML toolbox that requires no installation and is ready to use.
 
 
 核心功能 (Core Features)
+<img width="2542" height="1398" alt="屏幕截图 2026-10-07 004528" src="https://github.com/user-attachments/assets/8ff52aab-5b17-4611-b2a9-69fec2c188d4" />
+
 5.0新增代码编辑功能
 <img width="2541" height="1397" alt="屏幕截图 2026-10-07 004734" src="https://github.com/user-attachments/assets/50f07481-05a6-4ecb-a293-199aaa7ee12c" />
 
