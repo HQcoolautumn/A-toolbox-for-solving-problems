@@ -1,5 +1,6 @@
 解决麻烦的工具盒  / Problem-Solving Toolbox
 一个无需安装、点开即用的本地 HTML 网页工具箱
+4.0新增了播放器的功能，转换器支持多文件夹导入并且转换后生成多压缩包导出，并且修复了3D文件无法导入的bug。（导入文件请点击按钮导入，拖拽导入功能还在弄）
 A local HTML toolbox that requires no installation and is ready to use.
 2.0添加了自动保存功能，并且在文档内添加了繁体与简体互换功能，增加txt导出，在转换器内添加文档转换，可以批量进行繁体与简体的互换操作
 Version 2.0 introduces an auto-save feature, adds the ability to switch between traditional and simplified Chinese within documents, supports TXT export, and includes document conversion in the converter, enabling batch operations for converting between traditional and simplified Chinese.
