@@ -1,21 +1,20 @@
 解决麻烦的工具盒  / Problem-Solving Toolbox
 一个无需安装、点开即用的本地 HTML 网页工具箱
-4.0新增了播放器的功能，转换器支持多文件夹导入并且转换后生成多压缩包导出，并且修复了3D文件无法导入的bug。（导入文件请点击按钮导入，拖拽导入功能还在弄）
 A local HTML toolbox that requires no installation and is ready to use.
-2.0添加了自动保存功能，并且在文档内添加了繁体与简体互换功能，增加txt导出，在转换器内添加文档转换，可以批量进行繁体与简体的互换操作
-Version 2.0 introduces an auto-save feature, adds the ability to switch between traditional and simplified Chinese within documents, supports TXT export, and includes document conversion in the converter, enabling batch operations for converting between traditional and simplified Chinese.
-3.0增加了检测功能（截屏功能因为浏览器的安全限制没弄起来，作者本人懒得删了）
-3.0 added detection functionality (screenshot feature was not implemented due to browser security restrictions, and the author was too lazy to remove it)
+5.0新增了代码编辑功能，并且3D模块大更新，你可以编辑模型了，并且优化了移动端适配
+4.0新增了播放器的功能，有自动添加封面的功能，可以像图书馆那样轻松浏览你文件夹里面不同格式的文件（方向键翻页，视频，图片，PDF等等可以同时进行不用转换其他播放器），转换器支持多文件夹导入并且转换后生成多压缩包导出，并且修复了3D文件无法导入的bug。（导入文件请点击按钮导入，拖拽导入功能还在弄）
 ⚠️ 安全注意：由于最近旧版 ffmpeg 解码器漏洞与ChromeV8引擎越界写入漏洞（2026年6月爆出的严重浏览器漏洞）我更新了防护升级版本，不过由于攻击为极小概率事件，所以保留原始版本，没有更新浏览器的用户可以下载旧版，不过安全风险要需知。我已经尽力更新了网页程序避免被漏洞利用，但是真正有效的防护在于自己，请不要乱下东西
 以下为应对策略：1版本强制:本地桥启动前自动跑 ffmpeg -version低于 7.1.3 直接拒绝启动    2编码器白名单：防护升级版只允许 libx264/libx265/libvpx/... 等已知安全编码器，其余一律拒绝。   3畸形文件拦截 + 体积上限：输入体积硬上限 2GB（转码）/1GB（字幕）
 4下载界面安全须知：在"本地 GPU 工具包"对话框加了醒目红色安全区块，告知用户必须用官方源、保持 ffmpeg ≥7.1.3、勿处理来源不明媒体。
 5浏览器内核自检:启动时检测 Chromium 内核版本，低于 140（覆盖上述在野零日修复基线）即弹出顶部红色安全警告浮层，明确列出在野 CVE 编号，并给"前往升级"按钮。
 6安全响应:HTML头加了X-Content-Type-Options:nosniff以及监控型CSP
-<img width="2538" height="1401" alt="屏幕截图 2026-10-06 001005" src="https://github.com/user-attachments/assets/4f042b87-49b9-4b6e-b706-5006eed50fad" />
+
 
 核心功能 (Core Features)
+5.0新增代码编辑功能
+<img width="2541" height="1397" alt="屏幕截图 2026-10-07 004734" src="https://github.com/user-attachments/assets/50f07481-05a6-4ecb-a293-199aaa7ee12c" />
 
-4.0新增播放器功能，支持图片，视频，表格，代码等等大部分格式（包括avif之类的）。
+4.0新增播放器功能，有自动封面功能，你可以像图书馆那样预览你的文件。支持图片，视频，表格，代码等等大部分格式（包括avif之类的）。
 <img width="2510" height="1392" alt="屏幕截图 2026-10-06 001921" src="https://github.com/user-attachments/assets/56dd4dfc-3fd9-4781-9127-d5547acbedc5" />
 
 1绘画功能 (Drawing)
@@ -67,8 +66,8 @@ Note: Due to browser limitations, it is recommended to process videos in clips o
 
 (Compatibility: Some niche formats may not be supported by all browsers due to decoding limitations.)
 
-6三维预览：支持较小体积的三维模型文件预览（存在部分兼容性问题）。(3D Preview: Preview small-sized 3D model files.)
-<img width="2553" height="1405" alt="demo7" src="https://github.com/user-attachments/assets/d63d21cd-7496-4cfd-bf5b-557dcf481e32" />
+6三维预览：支持三维模型文件预览和简单编辑。(3D Preview: Preview 3D model files.)
+<img width="2518" height="1391" alt="屏幕截图 2026-10-07 000516" src="https://github.com/user-attachments/assets/0a45eb82-7d12-4d6e-bd12-ff2b513e6efa" />
 
 7在线/本地翻译：提供可选的在线或本地翻译功能。(Translation: Optional online or local translation feature.)
 <img width="2558" height="1398" alt="demo8" src="https://github.com/user-attachments/assets/647733c7-27e8-4751-9915-8429522cc1c9" />
@@ -92,4 +91,11 @@ Suitable for temporary and lightweight color correction. It is applicable for th
 (Data Saving: This is a web-based tool and does NOT have real-time auto-save. Data will be lost upon closing the tab. Please export your work manually during the process, especially for large files!)
 
 环境配置：部分高级功能（如本地显卡加速）需要用户具备一定的技术基础来配置运行环境。
+
+
+一下是历史更新记录
 (Environment Setup: Advanced features like local GPU acceleration require technical knowledge to set up.)
+2.0添加了自动保存功能，并且在文档内添加了繁体与简体互换功能，增加txt导出，在转换器内添加文档转换，可以批量进行繁体与简体的互换操作
+Version 2.0 introduces an auto-save feature, adds the ability to switch between traditional and simplified Chinese within documents, supports TXT export, and includes document conversion in the converter, enabling batch operations for converting between traditional and simplified Chinese.
+3.0增加了检测功能（截屏功能因为浏览器的安全限制没弄起来，作者本人懒得删了）
+3.0 added detection functionality (screenshot feature was not implemented due to browser security restrictions, and the author was too lazy to remove it)
