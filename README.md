@@ -19,9 +19,11 @@ A local HTML toolbox that requires no installation and is ready to use.
 <img width="2559" height="1406" alt="屏幕截图 2026-10-11 003121" src="https://github.com/user-attachments/assets/5fd2c129-f3a6-499f-88f7-2c9d64e9d112" />
 <img width="2559" height="1418" alt="屏幕截图 2026-10-11 003109" src="https://github.com/user-attachments/assets/d1ac4e83-e67f-4f26-8caa-39dee59e1889" />
 
-④娱乐（围棋作为演示，内置对决AI）
+④娱乐（围棋作为演示，内置对决AI，并且娱乐有部分玩法可以联机）
+<img width="2559" height="1405" alt="屏幕截图 2026-10-11 003309" src="https://github.com/user-attachments/assets/74f0d316-2465-439b-a072-ba5d7b1dea95" />
 
 ⑤本地AI聊天（小模型，所以会答非所问）
+<img width="2559" height="1399" alt="屏幕截图 2026-10-11 003504" src="https://github.com/user-attachments/assets/1759ec70-cd50-459c-adce-1c46920717be" />
 
 5.0新增代码编辑功能
 <img width="2541" height="1397" alt="屏幕截图 2026-10-07 004734" src="https://github.com/user-attachments/assets/50f07481-05a6-4ecb-a293-199aaa7ee12c" />
