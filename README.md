@@ -1,17 +1,27 @@
 解决麻烦的工具盒  / Problem-Solving Toolbox
 一个无需安装、点开即用的本地 HTML 网页工具箱
 A local HTML toolbox that requires no installation and is ready to use.
-5.0新增了代码编辑功能，并且3D模块大更新，你可以编辑模型了，并且优化了移动端适配
-4.0新增了播放器的功能，有自动添加封面的功能，可以像图书馆那样轻松浏览你文件夹里面不同格式的文件（方向键翻页，视频，图片，PDF等等可以同时进行不用转换其他播放器），转换器支持多文件夹导入并且转换后生成多压缩包导出，并且修复了3D文件无法导入的bug。（导入文件请点击按钮导入，拖拽导入功能还在弄）
-⚠️ 安全注意：由于最近旧版 ffmpeg 解码器漏洞与ChromeV8引擎越界写入漏洞（2026年6月爆出的严重浏览器漏洞）我更新了防护升级版本，不过由于攻击为极小概率事件，所以保留原始版本，没有更新浏览器的用户可以下载旧版，不过安全风险要需知。我已经尽力更新了网页程序避免被漏洞利用，但是真正有效的防护在于自己，请不要乱下东西
-以下为应对策略：1版本强制:本地桥启动前自动跑 ffmpeg -version低于 7.1.3 直接拒绝启动    2编码器白名单：防护升级版只允许 libx264/libx265/libvpx/... 等已知安全编码器，其余一律拒绝。   3畸形文件拦截 + 体积上限：输入体积硬上限 2GB（转码）/1GB（字幕）
-4下载界面安全须知：在"本地 GPU 工具包"对话框加了醒目红色安全区块，告知用户必须用官方源、保持 ffmpeg ≥7.1.3、勿处理来源不明媒体。
-5浏览器内核自检:启动时检测 Chromium 内核版本，低于 140（覆盖上述在野零日修复基线）即弹出顶部红色安全警告浮层，明确列出在野 CVE 编号，并给"前往升级"按钮。
-6安全响应:HTML头加了X-Content-Type-Options:nosniff以及监控型CSP
 
+6.0是大更新，增加了音乐制作（接近专业级别的了），科学计算器（有函数图绘制能力），计分器和计时器，娱乐游戏大模块（支持多人联机），本地AI聊天（html网页限制所以GPU难以调用，做到可以生成已经竭尽全力，想跑本地还是麻烦用专业软件）
+
+5.0新增了代码编辑功能，并且3D模块大更新，你可以编辑模型了，并且优化了移动端适配
 
 核心功能 (Core Features)
-<img width="2542" height="1398" alt="屏幕截图 2026-10-07 004528" src="https://github.com/user-attachments/assets/8ff52aab-5b17-4611-b2a9-69fec2c188d4" />
+<img width="2556" height="1400" alt="屏幕截图 2026-10-11 002829" src="https://github.com/user-attachments/assets/4d27963e-dec6-4d35-ac84-9f315090915d" />
+
+6.0新增的所有功能
+①音乐制作
+<img width="2559" height="1408" alt="屏幕截图 2026-10-11 002938" src="https://github.com/user-attachments/assets/156f726f-403d-4d98-969a-58f091eab490" />
+②计分器计时器
+<img width="2559" height="1398" alt="屏幕截图 2026-10-11 003021" src="https://github.com/user-attachments/assets/ee968aaf-0355-4abf-b35b-bd4fa44d4bff" />
+
+③科学计算器
+<img width="2559" height="1406" alt="屏幕截图 2026-10-11 003121" src="https://github.com/user-attachments/assets/5fd2c129-f3a6-499f-88f7-2c9d64e9d112" />
+<img width="2559" height="1418" alt="屏幕截图 2026-10-11 003109" src="https://github.com/user-attachments/assets/d1ac4e83-e67f-4f26-8caa-39dee59e1889" />
+
+④娱乐（围棋作为演示，内置对决AI）
+
+⑤本地AI聊天（小模型，所以会答非所问）
 
 5.0新增代码编辑功能
 <img width="2541" height="1397" alt="屏幕截图 2026-10-07 004734" src="https://github.com/user-attachments/assets/50f07481-05a6-4ecb-a293-199aaa7ee12c" />
@@ -101,3 +111,11 @@ Suitable for temporary and lightweight color correction. It is applicable for th
 Version 2.0 introduces an auto-save feature, adds the ability to switch between traditional and simplified Chinese within documents, supports TXT export, and includes document conversion in the converter, enabling batch operations for converting between traditional and simplified Chinese.
 3.0增加了检测功能（截屏功能因为浏览器的安全限制没弄起来，作者本人懒得删了）
 3.0 added detection functionality (screenshot feature was not implemented due to browser security restrictions, and the author was too lazy to remove it)
+4.0新增了播放器的功能，有自动添加封面的功能，可以像图书馆那样轻松浏览你文件夹里面不同格式的文件（方向键翻页，视频，图片，PDF等等可以同时进行不用转换其他播放器），转换器支持多文件夹导入并且转换后生成多压缩包导出，并且修复了3D文件无法导入的bug。（导入文件请点击按钮导入，拖拽导入功能还在弄）
+
+
+⚠️ 安全注意：由于最近旧版 ffmpeg 解码器漏洞与ChromeV8引擎越界写入漏洞（2026年6月爆出的严重浏览器漏洞）我更新了防护升级版本，不过由于攻击为极小概率事件，所以保留原始版本，没有更新浏览器的用户可以下载旧版，不过安全风险要需知。我已经尽力更新了网页程序避免被漏洞利用，但是真正有效的防护在于自己，请不要乱下东西
+以下为应对策略：1版本强制:本地桥启动前自动跑 ffmpeg -version低于 7.1.3 直接拒绝启动    2编码器白名单：防护升级版只允许 libx264/libx265/libvpx/... 等已知安全编码器，其余一律拒绝。   3畸形文件拦截 + 体积上限：输入体积硬上限 2GB（转码）/1GB（字幕）
+4下载界面安全须知：在"本地 GPU 工具包"对话框加了醒目红色安全区块，告知用户必须用官方源、保持 ffmpeg ≥7.1.3、勿处理来源不明媒体。
+5浏览器内核自检:启动时检测 Chromium 内核版本，低于 140（覆盖上述在野零日修复基线）即弹出顶部红色安全警告浮层，明确列出在野 CVE 编号，并给"前往升级"按钮。
+6安全响应:HTML头加了X-Content-Type-Options:nosniff以及监控型CSP
